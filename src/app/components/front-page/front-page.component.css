@@ -1,6 +1,7 @@
+/*  Main Header  */
 header {
   position: relative;
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
 }
 .header__bg {
@@ -18,10 +19,18 @@ header {
 }
 .hContentTitle {
   margin: 0;
-  top: 25vh;
+  top: 30vh;
   text-align: center;
+  text-wrap: normal;
 }
 header h1 {
   position: relative;
   color: white;
+}
+/*  Content  */
+.midSpace {
+  padding-top: 8em;
+}
+.angularLogo {
+  background: url("../../../assets/background-img/angular.svg");
 }
