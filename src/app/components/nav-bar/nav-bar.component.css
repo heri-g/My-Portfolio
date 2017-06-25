@@ -1,0 +1,11 @@
+nav.navbar.navbar-default {
+  margin: 0;
+  position: fixed;
+  z-index: 5000;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
+  border-radius: inherit;
+  border: none;
+}
