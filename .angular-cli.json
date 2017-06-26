@@ -10,6 +10,7 @@
       "assets": [
         "assets",
         "background-img",
+        "resume",
         "favicon.ico"
       ],
       "index": "index.html",

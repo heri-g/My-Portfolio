@@ -3,9 +3,29 @@ nav.navbar.navbar-default {
   position: fixed;
   z-index: 5000;
   width: 100%;
+  background-color: rgba(66,66,66, 0.9);
   -webkit-box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
   -moz-box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
   box-shadow: 0 5px 37px 0 rgba(0,0,0,0.75);
   border-radius: inherit;
   border: none;
 }
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+li > a {
+  color: white;
+}
+li > a:hover {
+  color: #9E9E9E;
+}
+li > a:active {
+  color: #9E9E9E;
+}
+/*li > a:visited {*/
+  /*color: #9E9E9E;*/
+/*}*/
+

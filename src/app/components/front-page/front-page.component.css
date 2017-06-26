@@ -1,3 +1,12 @@
+h1 {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.description a h1:hover {
+  color: #9E9E9E !important;
+}
 /*  Main Header  */
 header {
   position: relative;
@@ -12,16 +21,19 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../../../assets/background-img/centralpark.jpg") no-repeat fixed;
+  background: url("../../../assets/background-img/centralpark.jpg") rgb(33,33,33) no-repeat fixed;
   background-size: cover;
   transform: skewY(-3deg);
   transform-origin: top left;
 }
 .hContentTitle {
   margin: 0;
-  top: 30vh;
+  top: 35vh;
   text-align: center;
   text-wrap: normal;
+}
+#mainTitle.hContentTitle {
+  text-shadow: 1px 1px black;
 }
 header h1 {
   position: relative;
@@ -31,6 +43,137 @@ header h1 {
 .midSpace {
   padding-top: 8em;
 }
+.skillSetHr {
+  width: 20%;
+}
+/*  skill Logos  */
+.skillSet {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
 .angularLogo {
-  background: url("../../../assets/background-img/angular.svg");
+  background: url("../../../assets/background-img/angular.svg") center no-repeat;
+  height: 15em;
+}
+.tsLogo {
+  background: url("../../../assets/background-img/ts.svg") center no-repeat;
+  height: 15em;
+}
+.jsLogo {
+  background: url("../../../assets/background-img/js.svg") center no-repeat;
+  height: 15em;
+}
+.html5Logo {
+  background: url("../../../assets/background-img/HTML5Logo.svg") center no-repeat;
+  height: 15em;
+}
+.css3Logo {
+  background: url("../../../assets/background-img/cssLogo.svg") center no-repeat;
+  background-size: contain;
+  height: 15em;
+}
+.bsLogo {
+  background: url("../../../assets/background-img/bs.svg") center no-repeat;
+  height: 15em;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(66,66,66, 0.9);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  z-index: 500;
+}
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.angularLogo:hover .overlay {
+  width: 100%;
+}
+.tsLogo:hover .overlay {
+  width: 100%;
+}
+.jsLogo:hover .overlay {
+  width: 100%;
+}
+.html5Logo:hover .overlay {
+  width: 100%;
+}
+.css3Logo:hover .overlay {
+  width: 100%;
+}
+.bsLogo:hover .overlay {
+  width: 100%;
+}
+.container-fluid {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  visibility: hidden;
+}
+/*----------- Logo image fade in -----------*/
+.fadeIn {
+  -webkit-animation: animat_show 2s;
+  animation: animat_show 2s;
+  visibility: visible !important;
+}
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+/*----------- End of ogo image fade in -----------*/
+/*************************   Projects   *************************/
+.pokespot img {
+  width: 100%;
+}
+.col-md-6 {
+  visibility: hidden;
+}
+.pokespot {
+  position: relative;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlayTop {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(66,66,66, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.pokespot:hover .overlayTop {
+  bottom: 0;
+  height: 100%;
+}
+.description {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.bottomHr {
+  margin-top: 3em;
 }

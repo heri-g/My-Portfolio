@@ -1,20 +1,78 @@
 <header>
   <div class="header__bg"></div>
-  <h1 [ngClass]="['hContentTitle']">Heri Gutierrez <br> Web Developer / Designer</h1>
+  <h1 ngClass="hContentTitle" id="mainTitle">Heri Gutierrez <br> Web Developer / Designer</h1>
 </header>
-<div [ngClass]="['container', 'midSpace', ' text-center']">
-  <div class="row">
+<div [ngClass]="['container-fluid', 'midSpace', ' text-center']">
+  <div class="row skillSet">
     <div class="col-md-12">
-      Skill Set
+      <h1>My Skill Set</h1>
+      <hr ngClass="skillSetHr">
     </div>
   </div>
   <div class="row">
-    <div [ngClass]="['col-md-6', 'angularLogo']">
-
+    <div ngClass="col-md-4 col-space scrollAnimation">
+      <div ngClass="angularLogo">
+        <div ngClass="overlay">
+          <div class="text"><h1>Angular</h1></div>
+        </div>
+      </div>
     </div>
-    <div [ngClass]="['col-md-6']">
-      hi
+    <div ngClass="col-md-4 col-space scrollAnimation">
+      <div ngClass="tsLogo">
+        <div ngClass="overlay">
+          <div class="text"><h1>TypeScript</h1></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-space scrollAnimation">
+      <div ngClass="jsLogo">
+        <div ngClass="overlay">
+          <div class="text"><h1>JavaScript</h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ngClass="row">
+    <div class="col-md-4 col-space scrollAnimation">
+      <div ngClass="bsLogo">
+        <div ngClass="overlay">
+          <div class="text"><h1>Bootstrap</h1></div>
+        </div>
+      </div>
+    </div>
+    <div ngClass="col-md-4 col-space scrollAnimation">
+      <div ngClass="html5Logo">
+        <div ngClass="overlay">
+          <div class="text"><h1>HTML5</h1></div>
+        </div>
+      </div>
+    </div>
+    <div ngClass="col-md-4 col-space scrollAnimation">
+      <div ngClass="css3Logo">
+        <div ngClass="overlay">
+          <div class="text"><h1>CSS3</h1></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
+<hr>
+<div [ngClass]="['container', 'midSpace', ' text-center']">
+  <div class="row skillSet">
+    <div class="col-md-12">
+      <h1>Projects</h1>
+      <hr ngClass="skillSetHr">
+    </div>
+  </div>
+  <div ngClass="row">
+    <div ngClass="col-md-6 col-md-offset-3 scrollAnimation">
+      <div ngClass="pokespot">
+        <img src="../../../assets/background-img/pokespot.png" alt="Image of The Pokéspot website" class="pokespotImage">
+        <div class="overlayTop">
+          <div class="description"><a href="http://www.pokespot.com" target="_blank"><h1>The Pokéspot</h1></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr ngClass="bottomHr">
