@@ -1,20 +1,162 @@
 <header>
   <div class="header__bg"></div>
-  <h1 [ngClass]="['hContentTitle']">Heri Gutierrez <br> Web Developer / Designer</h1>
+  <h1 ngClass="hContentTitle" id="mainTitle">Heri Gutierrez<br>Web Developer</h1>
 </header>
-<div [ngClass]="['container', 'midSpace', ' text-center']">
-  <div class="row">
+<div [ngClass]="['container-fluid', 'midSpace', ' text-center', 'scrollAnimation']">
+  <div class="row myHeading">
     <div class="col-md-12">
-      Skill Set
+      <h1>My Skill Set</h1>
+      <hr ngClass="skillSetHr">
     </div>
   </div>
   <div class="row">
-    <div [ngClass]="['col-md-6', 'angularLogo']">
-
+    <div ngClass="col-md-4 col-space">
+      <div ngClass="angularLogo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="https://angular.io/" target="_blank">
+              <h1>Angular v. 2 &amp; 4</h1>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div [ngClass]="['col-md-6']">
-      hi
+    <div ngClass="col-md-4 col-space">
+      <div ngClass="tsLogo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              <h1>TypeScript</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-space">
+      <div ngClass="jsLogo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="https://www.javascript.com/" target="_blank">
+              <h1>JavaScript</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ngClass="row">
+    <div class="col-md-4 col-space">
+      <div ngClass="bsLogo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="http://getbootstrap.com/" target="_blank">
+              <h1>Bootstrap 3 & 4</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ngClass="col-md-4 col-space">
+      <div ngClass="html5Logo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="https://www.w3.org/TR/html5/" target="_blank">
+              <h1>HTML5</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ngClass="col-md-4 col-space">
+      <div ngClass="css3Logo">
+        <div ngClass="overlay">
+          <div class="text description">
+            <a href="https://www.w3.org/Style/CSS/" target="_blank">
+              <h1>CSS3</h1>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
+<hr>
+<div [ngClass]="['container', 'midSpace', ' text-center', 'projects', 'scrollAnimation']">
+  <div class="row myHeading">
+    <div class="col-md-12">
+      <h1>Projects</h1>
+      <hr ngClass="skillSetHr">
+    </div>
+  </div>
+  <div ngClass="row">
+    <div ngClass="col-md-6">
+      <div ngClass="pokespot">
+        <img src="../../../assets/background-img/pokespot.png" alt="Image of The Pokéspot website" class="pokespotImage">
+        <div class="overlayTop">
+          <div class="description"><a href="http://www.pokespot.com" target="_blank"><h1>The Pokéspot</h1></a></div>
+        </div>
+      </div>
+      <hr ngClass="projectsHr">
+      <div class="projectSummary">
+        <p ngClass="lightText">
+          <strong ngClass="summaryBold">The Pokéspot</strong> is a restaurant located in Union Square, NYC.
+          I was hired as a Web Developer to build a website that captured the essence of their atmosphere and cuisine.
+          The site was built using the Angular framework, Bootstrap, & jQuery.
+        </p>
+      </div>
+    </div>
+    <div ngClass="col-md-6">
+      <div ngClass="pokespot">
+        <img src="../../../assets/background-img/angularDirectives.png" alt="Image of The Pokéspot website" class="pokespotImage">
+        <div ngClass="overlayTop">
+          <div class="description"><a [routerLink]="['/angular-directives']" target="_blank"><h1>Angular Directives</h1></a></div>
+        </div>
+      </div>
+      <hr ngClass="projectsHr">
+      <div ngClass="projectSummary">
+        <p ngClass="lightText">
+          <strong ngClass="summaryBold">This Angular Directives</strong> example app showcases the use of the Angular frameworks' directives such as:
+          String interpolation, *ngIf, *ngFor, NgSwitch, NgStyle, NgClass and two way data-binding.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--<div ngClass="row">-->
+    <!--<div ngClass="col-md-12">-->
+      <!--<div ngClass="pokespot">-->
+        <!--<img src="../../../assets/background-img/pokespot.png" alt="Image of The Pokéspot website" class="pokespotImage">-->
+        <!--<div class="overlayTop">-->
+          <!--<div class="description">-->
+            <!--<a href="http://www.maidstay.com" target="_blank">-->
+              <!--<h1>The Pokéspot</h1>-->
+            <!--</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<hr ngClass="projectsHr">-->
+      <!--<div class="projectSummary">-->
+        <!--<p ngClass="lightText">-->
+          <!--<strong ngClass="summaryBold">Maidstay</strong> is a restaurant located in Union Square, NYC.-->
+          <!--I was hired as a Web Developer to build a website that captured the essence of their atmosphere and cuisine.-->
+          <!--The site was built using the Angular framework, Bootstrap, & jQuery.-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div ngClass="col-md-6">&ndash;&gt;-->
+      <!--&lt;!&ndash;<div ngClass="pokespot">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../../../assets/background-img/angularDirectives.png" alt="Image of The Pokéspot website" class="pokespotImage">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div ngClass="overlayTop">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="description"><a [routerLink]="['/mock-1']"sopsoop target="_blank"><h1>Angular Directives</h1></a></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;<hr ngClass="projectsHr">&ndash;&gt;-->
+      <!--&lt;!&ndash;<div ngClass="projectSummary">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p ngClass="lightText">&ndash;&gt;-->
+          <!--&lt;!&ndash;<strong ngClass="summaryBold">This Angular Directives row 2</strong> example app showcases the use of the Angular frameworks' directives such as:&ndash;&gt;-->
+          <!--&lt;!&ndash;String interpolation, *ngIf, *ngFor, NgSwitch, NgStyle, NgClass and two way data-binding.&ndash;&gt;-->
+        <!--&lt;!&ndash;</p>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<hr ngClass="bottomHr">

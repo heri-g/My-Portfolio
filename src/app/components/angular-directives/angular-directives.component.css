@@ -1,0 +1,55 @@
+/*  Main  Page container   */
+* {
+  background-color: white;
+}
+.top {
+  padding-top: 7em;
+}
+/*-------- ngSwitch -----------*/
+.p-wrap {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+/*  NgClass styles direct binding */
+.centered-text {
+  text-align: center;
+}
+.underlined {
+  border-bottom: 1px solid #ccc;
+}
+.orange {
+  color: orange;
+}
+/*  NgClass classes array binding */
+.warning {
+  color: red;
+  font-weight: bold;
+}
+.big {
+  font-size: 1.2rem;
+}
+/*  NgClass Binding an object  */
+.card {
+  height: 9em;
+  border: 1px solid #eee;
+  padding: 1rem;
+  margin: 0.4rem;
+  font-family: sans-serif;
+  background-color: cadetblue;
+  box-shadow: 5px 5px 5px #888888;
+}
+.dark {
+  background-color: #444;
+  border-color: #000;
+  color: #fff;
+}
+.flat {
+  box-shadow: none;
+}
+.counter > ul {
+  list-style: none;
+}
+/*----------Code Style----------*/
+code {
+  text-align: left !important;
+}

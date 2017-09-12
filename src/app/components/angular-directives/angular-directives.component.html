@@ -1,0 +1,191 @@
+<!--The whole content below can be removed with the new code.-->
+<div ngClass="container-fluid top">
+  <h1 ngClass="text-center">
+    Welcome to my {{title}}!!
+  </h1>
+  <p ngClass="text-center">The purpose of this page is to showcase the use of Angular directives through simple examples.</p>
+<div class="row text-center">
+  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+</div>
+
+  <!--BASic interpolation-->
+
+  <div ngClass="row text-center">
+    <div class="col-md-6 col-xs-6">
+      <h1>
+        My name is {{name}}.
+      </h1>
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <h1>
+        &#123; &#123; name &#125; &#125;<br> (Basic string Interpolation)
+      </h1>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- *ngIf -->
+
+  <h1 ngClass="text-center">*ngIf</h1>
+  <p ngClass="text-center">
+    The button below demonstrates the use of *ngIf with a (click) function that will toggle a hidden div.
+  </p>
+
+  <div class="row text-center">
+    <div class="col-md-6 col-xs-6">
+        <button type="button" (click)="toggleExists()" style="border-radius:5em; height: 3em;">Toggle Div</button>
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <div>
+        <h1>Hello!</h1>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- *ngFor -->
+
+  <h1 ngClass="text-center">*ngFor</h1>
+  <p ngClass="text-center">
+    The NgFor directive is a way of repeating a template by using each item of an iterable as that template's context.
+  </p>
+
+  <div class="row">
+    <div class="col-md-6 col-xs-6">
+      <code class="text-left">
+        movies = [<br>
+        title: 'Toy Story 3', director: 'Lee Unkrich',<br>
+        title: 'Frozen', director: 'Jennifer Lee & Chris Buck',<br>
+        title: 'Zootopia', director: 'Byron Howard & Rich Moore',<br>
+        title: 'Wedding Crashers', director: 'David Dobkin',<br>
+        title: 'I am Legend', director: 'Francis Lawrence',<br>
+        title: 'Elysium', director: 'Neill Blomkamp',<br>
+        title: 'Wonder Woman', director: 'Patty Jenkins',<br>
+        title: 'Iron Man', director: 'Jon Favreau'<br>
+        ];<br>
+      </code>
+    </div>
+    <div class="col-md-6 col-xs-6 text-center">
+      <div *ngFor="let movie of movies">
+        {{movie.title}} directed by: {{movie.director}}
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- NgSwitch-->
+
+  <div class="row text-center">
+    <h1 ngClass="text-center">NgSwitch</h1>
+    <p ngClass="p-wrap">
+      ngSwitch is comprised of two directives, an attribute directive and a structural directive.
+      Here we see the ngSwitch attribute directive being attached to an element.
+      This expression bound to the directive defines what will compared against in the switch structural directives.
+      If an expression bound to ngSwitchCase matches the one given to ngSwitch, those components are created and the others destroyed.
+      If none of the cases match, then components that have ngSwitchDefault bound to them will be created and the others destroyed.
+    </p>
+    <div class="col-md-12 col-xs-12">
+      <button (click)="value=1">select - 1</button>
+      <button (click)="value=2">select - 2</button>
+      <button (click)="value=3">select - 3</button>
+      <h5>You selected : {{value}}</h5>
+
+      <hr style="width: 50%">
+      <div [ngSwitch]="value">
+
+        <div *ngSwitchCase="1">1. Option - <b>{{value}}</b> </div>
+        <div *ngSwitchCase="2">2. Option - <b>{{value}}</b> </div>
+        <div *ngSwitchCase="3">3. Option - <b>{{value}}</b> </div>
+        <div *ngSwitchDefault>Default Option</div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <hr>
+
+  <!-- NgStyle -->
+
+  <h1 ngClass="text-center">NgStyle</h1>
+
+  <div class="row text-center">
+    <div class="col-md-12 col-xs-12">
+      <p style="padding: 1rem" [ngStyle]="{'color': 'green','font-weight': 'bold','borderBottom': borderStyle}">
+        This is an example of a sentence styled with ngStyle.<br>
+        Ex: [ngStyle]="&#123;'color': 'green','font-weight': 'bold','borderBottom': borderStyle&#125;"
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- NgClass -->
+
+  <h1 ngClass="text-center">NgClass</h1>
+
+  <div class="row text-center">
+    <div class="col-md-6 col-xs-6">
+      <h3>Binding a string</h3>
+      <p ngClass="centered-text underlined" class="orange">
+        This is an example where we bind a string directly to the attribute, it's just like adding an html class attribute.
+        <br>Ex: ngClass="centered-text underlined"
+      </p>
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <h3>Binding an array</h3>
+      <p [ngClass]="['warning', 'big']">
+        On this sentence we are binding to the ngClass directive by using an expression.<br>
+        Ex: [ngClass]="['warning', 'big']"
+      </p>
+
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12 col-xs-12">
+      <h3>Binding an object</h3>
+      <hr style="width: 50%">
+
+      <p [ngClass]="{ card: true, dark: false, flat: flat }">
+        <button type="button" (click)="flat=!flat">Toggle Flat</button><br>
+        An object can be bound to the directive. <br>
+        Angular applies each property name of that object to the component if that property is true.<br>
+        In this case the objects are; &#123; card: true, dark: false, flat: true &#125;.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--  Two way data binding  -->
+
+  <div class="row text-center">
+    <div class="col-md-6 col-xs-6">
+
+    </div>
+  </div>
+
+  <h3 ngClass="text-center">Two way data-binding</h3>
+  <p ngClass="text-center">
+    In this example I sent data out of a component called counter and used two-way data binding to increase the count of every number at the click of a button.
+  </p>
+
+  <div ngClass="text-center counter">
+    <app-counter [(count)]="number1">Number 1:</app-counter>
+    <app-counter [count]="number2" (countChange)="number2=$event">Number 2:</app-counter>
+    <app-counter [count]="number3" (countChange)="onCountChanged($event)">Number 3:</app-counter>
+    <ul>
+      <li> number1: {{number1}} </li>
+      <li> number2: {{number2}} </li>
+      <li> number3: {{number3}} </li>
+      <li> number4: {{number4}} </li>
+    </ul>
+  </div>
+
+</div>
