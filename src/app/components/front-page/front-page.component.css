@@ -1,6 +1,9 @@
 h1 {
   color: white;
 }
+p {
+  color: white;
+}
 a {
   text-decoration: none;
 }
@@ -21,7 +24,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../../../assets/background-img/centralpark.jpg") rgb(33,33,33) no-repeat fixed;
+  background: url("../../../assets/background-img/centrrralparrrk.jpg") rgb(33,33,33) no-repeat fixed;
   background-size: cover;
   transform: skewY(-3deg);
   transform-origin: top left;
@@ -33,7 +36,8 @@ header {
   text-wrap: normal;
 }
 #mainTitle.hContentTitle {
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black;
+  font-size: 450%;
 }
 header h1 {
   position: relative;
@@ -47,7 +51,7 @@ header h1 {
   width: 20%;
 }
 /*  skill Logos  */
-.skillSet {
+.myHeading {
   padding-top: 2em;
   padding-bottom: 4em;
 }
@@ -117,9 +121,11 @@ header h1 {
 .bsLogo:hover .overlay {
   width: 100%;
 }
-.container-fluid {
+.col-space {
   padding-top: 4em;
   padding-bottom: 4em;
+}
+.container-fluid {
   visibility: hidden;
 }
 /*----------- Logo image fade in -----------*/
@@ -137,7 +143,7 @@ header h1 {
 .pokespot img {
   width: 100%;
 }
-.col-md-6 {
+.projects {
   visibility: hidden;
 }
 .pokespot {
@@ -173,6 +179,15 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+.projectsHr {
+  width: 40%;
+}
+.summaryBold {
+  font-weight: bold;
+}
+.lightText {
+  font-weight: 100;
 }
 .bottomHr {
   margin-top: 3em;
