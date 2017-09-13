@@ -11,6 +11,10 @@ export class AngularDirectivesComponent {
   exists = false;
   title = ' Angular Directives example app';
   name = 'Heri';
+  number1: number;
+  number2: number;
+  number3: number;
+  number4: number;
   movies = [
     {title: 'Toy Story 3', director: 'Lee Unkrich'},
     {title: 'Frozen', director: 'Jennifer Lee & Chris Buck'},
@@ -27,19 +31,12 @@ export class AngularDirectivesComponent {
   toggleExists() {
     this.exists = !this.exists;
   }
-
-  number1: number;
-  number2: number;
-  number3: number;
-  number4: number;
-
   constructor() {
     this.number1 = 0;
     this.number2 = 0;
     this.number3 = 0;
     this.number4 = 0;
   }
-
   onCountChanged(value: number) {
     this.number3 = value;
     this.number4 = value;

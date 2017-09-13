@@ -37,7 +37,7 @@
         <button type="button" (click)="toggleExists()" style="border-radius:5em; height: 3em;">Toggle Div</button>
     </div>
     <div class="col-md-6 col-xs-6">
-      <div>
+      <div *ngIf="exists">
         <h1>Hello!</h1>
       </div>
     </div>
